@@ -1,0 +1,17 @@
+{
+  "name": "node-express",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/sumanchem1989/node-express.git",
+  "author": "Suman Kalyan Das <sumanchem1989@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon index"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
