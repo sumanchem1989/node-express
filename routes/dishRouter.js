@@ -31,4 +31,21 @@ dishRouter
     res.end("Deleting all dishes");
   });
 
+dishRouter
+  .route("/:dishId")
+  .get((req, res, next) => {
+    res.end("Will send details of the dish: " + req.params.dishId + " to you!");
+  })
+  .post((req, res, next) => {
+    res.end(
+      `Will add the dish ${req.body.name} with details ${req.body.description}`
+    );
+  })
+  .put((req, res, next) => {
+    res.write(`Updating the dish: ${req.params.dishId}\n`);
+    res.end(
+      `Will update the dish: ${req.body.name} with details ${req.params.dishId}`
+    );
+  });
+
 module.exports = dishRouter;
